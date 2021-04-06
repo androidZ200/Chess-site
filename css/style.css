@@ -1,15 +1,24 @@
       body {
           background-color: #2E2E2E;
           color: white;
+          font-family: sans-serif;
           height: 100vh;
           display: flex;
           justify-content: center;
           align-items: stretch;
       }
       
-      h1 {
+      .color {
+          background-color: orange;
+          color: black;
+          text-transform: uppercase;
+          font-size: 18px;
+      }
+      
+      .list-style h1 {
           font-size: 30px;
           text-transform: uppercase;
+          margin-bottom: 20px;
       }
       
       .main-block {
@@ -48,6 +57,29 @@
       .list-style {
           padding: 15px;
           text-align: center;
+          display: flex;
+          flex-direction: column;
+      }
+      
+      .block-overflow-out {
+          position: relative;
+          height: auto;
+          width: 100%;
+          flex-grow: 1;
+      }
+      
+      .block-overflow {
+          position: absolute;
+          overflow-y: auto;
+          overflow-x: hidden;
+          height: 100%;
+          width: 100%;
+          top: 0px;
+          left: 0px;
+      }
+      
+      .block-overflow::-webkit-scrollbar {
+          width: 0;
       }
       
       .block-right {
@@ -69,4 +101,71 @@
       
       .back-gray {
           background-color: #4F4F4F;
+      }
+      
+      .lists-block__list-item {
+          background-color: #2E2E2E;
+          font-size: 20px;
+          text-align: center;
+          padding: 10px 20px;
+          position: relative;
+          margin-bottom: 20px;
+          
+          /*white-space: nowrap;*/
+          overflow-x: hidden;
+      }
+      
+      .lists-block__list-item_button {
+          margin-top: 10px;
+          padding: 6px;
+          padding-bottom: 3px;
+          cursor: pointer;
+      }
+      
+      .game-button {
+          width: 50%;
+          margin: 10px auto 0px auto
+      }
+      
+      .color-game-circle {
+          width: 30px;
+          height: 30px;
+          border-radius: 30px;
+          border: solid 2px #2E2E2E;
+          
+      }
+      .lists-block__list-item_color-game-circle {
+          position: absolute;
+          bottom: 9px;
+          left: 16px;
+      }
+      
+      .circle-black {
+          background-color: black;
+      }
+      
+      .circle-white {
+          background-color: white;
+      }
+      
+      .circle-rand {
+          background-image: url(../img/rand-circle-color.jpg);
+          transform: rotate(45deg);
+      }
+      
+      .lists-block__list-item_time-block {
+          position: absolute;
+          bottom: 13px;
+          right: 17px;
+          color: orange;
+          font-size: 18px;
+      }
+      
+      .lists-block__buttons {
+          display: flex;
+          justify-content: space-between;
+      }
+      
+      .tournament-button {
+          width: 115px;
       }
