@@ -10,6 +10,7 @@
       
       .color, .color-diactive {
           text-align: center;
+          display: block;
           background-color: orange;
           color: black;
           text-transform: uppercase;
@@ -17,6 +18,8 @@
           cursor: pointer;
           transition: 0.2s;
           border-radius: 3px;
+          border: 0;
+          padding: 0;
       }
       
       .color-diactive {
@@ -50,9 +53,61 @@
       }
       
       .form-create {
-          height: 70px;
           margin-bottom: 20px;
           flex-grow: 0;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          font-size: 25px;
+          text-transform: uppercase;
+      }
+      
+      .form-create__times {
+          width: 270px;
+          display: flex;
+          justify-content: space-between;
+      }
+      
+      .form-create__input-form {
+          width: 50px;
+          margin: 0px 10px;
+          border-radius: 3px;;
+          background-color: #2E2E2E;
+          color: orange;
+          font-size: 25px;
+          text-align: center;
+          height: 30px;
+      }
+      
+      .form-create__input-form::-webkit-outer-spin-button,
+      .form-create__input-form::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+      
+      .form-create__colors {
+          width: 130px;
+          display: flex;
+          justify-content: space-between;
+      }
+      
+      .form-create__circle {
+          display: block;
+          cursor: pointer;
+          transition: 0.2s;
+      }
+      
+      .form-create__radio-button input[type=radio] {
+          display: none;
+      }
+      
+      .form-create__radio-button input[type=radio]:checked + label, .form-create__circle:hover {
+          border: solid 2px orange;
+      }
+      
+      .create-button {
+          width: 140px;
+          padding-top: 8px;
       }
       
       .lists-block {
@@ -141,6 +196,7 @@
       
       .back-gray {
           background-color: #4F4F4F;
+          border-radius: 3px;
       }
       
       .lists-block__list-item {

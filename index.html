@@ -12,8 +12,31 @@
 <body>
     <div class='main-block'>
         <div class='block-left'>
-            <div class='form-create back-gray'>
-            </div>
+            <form class='form-create back-gray'>
+                <div class="form-create__times">
+                    <p>Время:</p>
+                    <input type="number" max="180" min="0" id="time-lim" class="form-create__input-form" value="0">
+                    <p>+</p>
+                    <input type="number" max="10" min="0" id="time-sup" class="form-create__input-form" value="0">
+                </div>
+                <div class="form-create__colors">
+                    <div class="form-create__radio-button">
+                        <input type="radio" id="radio-b" name="radio-circle">
+                        <label class="color-game-circle circle-black form-create__circle" for="radio-b"></label>
+                    </div>
+                    <div class="form-create__radio-button">
+                        <input type="radio" id="radio-r" name="radio-circle" checked>
+                        <label class="color-game-circle circle-rand form-create__circle" for="radio-r"></label>
+                    </div>
+                    <div class="form-create__radio-button">
+                        <input type="radio" id="radio-w" name="radio-circle">
+                        <label class="color-game-circle circle-white form-create__circle" for="radio-w"></label>
+                    </div>
+                </div>
+                <div class="create-button color">
+                    Создать
+                </div>
+            </form>
             <div class='lists-block'>
                 <div class='list back-gray list-general-width'>
                     <h1>Игры</h1>
@@ -21,27 +44,27 @@
                         <div class="block-overflow">
                             <div class="lists-block__list-item">
                                 <p>Daniil Soshnikov(1500)</p>
-                                <div class="lists-block__list-item_button color game-button">
+                                <button class="lists-block__list-item_button color game-button">
                                     Играть
-                                </div>
+                                </button>
                                 <div class="color-game-circle lists-block__list-item_color-game-circle circle-rand"></div>
                                 <div class="lists-block__list-item_time-block">90+0</div>
                             </div>
 
                             <div class="lists-block__list-item">
                                 <p>Полиночка(2700)</p>
-                                <div class="lists-block__list-item_button color game-button">
+                                <button class="lists-block__list-item_button color game-button">
                                     Играть
-                                </div>
+                                </button>
                                 <div class="color-game-circle lists-block__list-item_color-game-circle circle-black"></div>
                                 <div class="lists-block__list-item_time-block"></div>
                             </div>
                             
                             <div class="lists-block__list-item">
                                 <p>qarasiq(1489)</p>
-                                <div class="lists-block__list-item_button color game-button">
+                                <button class="lists-block__list-item_button color game-button">
                                     Играть
-                                </div>
+                                </button>
                                 <div class="color-game-circle lists-block__list-item_color-game-circle circle-white"></div>
                                 <div class="lists-block__list-item_time-block">3+3</div>
                             </div>
@@ -55,36 +78,36 @@
                             <div class="lists-block__list-item">
                                 <p>Название турнира</p>
                                 <div class="lists-block__buttons">
-                                   <div class="lists-block__list-item_button color tournament-button">
+                                   <button class="lists-block__list-item_button color tournament-button">
                                         Играть
-                                    </div>
-                                    <div class="lists-block__list-item_button color tournament-button">
+                                    </button>
+                                    <button class="lists-block__list-item_button color tournament-button">
                                         Смотреть
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                             
                             <div class="lists-block__list-item">
                                 <p>Название турнира</p>
                                 <div class="lists-block__buttons">
-                                    <div class="lists-block__list-item_button color tournament-button">
+                                    <button class="lists-block__list-item_button color tournament-button">
                                         Играть
-                                    </div>
-                                    <div class="lists-block__list-item_button color tournament-button">
+                                    </button>
+                                    <button class="lists-block__list-item_button color tournament-button">
                                         Смотреть
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                             
                             <div class="lists-block__list-item">
                                 <p>Название турнира может быть достаточно большим, поэтому это тоже нужно проверить</p>
                                 <div class="lists-block__buttons">
-                                    <div class="lists-block__list-item_button color tournament-button">
+                                    <button class="lists-block__list-item_button color tournament-button">
                                         Играть
-                                    </div>
-                                    <div class="lists-block__list-item_button color tournament-button">
+                                    </button>
+                                    <button class="lists-block__list-item_button color tournament-button">
                                         Смотреть
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -99,8 +122,8 @@
                     <img class="avatar-img" src="img/avatar.png">
                 </div>
                 <p>Сошников Даниил(1600)</p>
-                <div class="self-block__button color">Мой профиль</div>
-                <div class="self-block__button color">Выйти</div>
+                <button class="self-block__button color">Мой профиль</button>
+                <button class="self-block__button color">Выйти</button>
             </div>
             <div class='continues-list back-gray list'>
                 <h1>текущие игры</h1>
@@ -108,16 +131,44 @@
                         <div class="block-overflow">
                             <div class="lists-block__list-item">
                                 <p>Имя соперника(ретинг)</p>
-                                <div class="lists-block__list-item_button color time-button">
+                                <button class="lists-block__list-item_button color time-button">
                                     14:31
-                                </div>
-                                <div class="color-game-circle continues-list__list-item_color-game-circle circle-rand"></div>
+                                </button>
+                                <div class="color-game-circle continues-list__list-item_color-game-circle circle-white"></div>
                             </div>
                             <div class="lists-block__list-item">
                                 <p>Имя соперника(ретинг)</p>
-                                <div class="lists-block__list-item_button color-diactive time-button">
+                                <button class="lists-block__list-item_button color-diactive time-button">
                                     infinity
-                                </div>
+                                </button>
+                                <div class="color-game-circle continues-list__list-item_color-game-circle circle-black"></div>
+                            </div>
+                            <div class="lists-block__list-item">
+                                <p>Имя соперника(ретинг)</p>
+                                <button class="lists-block__list-item_button color-diactive time-button">
+                                    infinity
+                                </button>
+                                <div class="color-game-circle continues-list__list-item_color-game-circle circle-black"></div>
+                            </div>
+                            <div class="lists-block__list-item">
+                                <p>Имя соперника(ретинг)</p>
+                                <button class="lists-block__list-item_button color-diactive time-button">
+                                    infinity
+                                </button>
+                                <div class="color-game-circle continues-list__list-item_color-game-circle circle-black"></div>
+                            </div>
+                            <div class="lists-block__list-item">
+                                <p>Имя соперника(ретинг)</p>
+                                <button class="lists-block__list-item_button color-diactive time-button">
+                                    infinity
+                                </button>
+                                <div class="color-game-circle continues-list__list-item_color-game-circle circle-black"></div>
+                            </div>
+                            <div class="lists-block__list-item">
+                                <p>Имя соперника(ретинг)</p>
+                                <button class="lists-block__list-item_button color-diactive time-button">
+                                    infinity
+                                </button>
                                 <div class="color-game-circle continues-list__list-item_color-game-circle circle-black"></div>
                             </div>
                         </div>
