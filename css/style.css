@@ -9,10 +9,17 @@
       }
       
       .color {
+          text-align: center;
           background-color: orange;
           color: black;
           text-transform: uppercase;
           font-size: 18px;
+          cursor: pointer;
+          transition: 0.2s;
+      }
+      
+      .color:hover {
+          background-color: white;
       }
       
       .list-style h1 {
@@ -93,6 +100,32 @@
           height: 350px;
           flex-grow: 0;
           margin-bottom: 20px;
+          padding: 30px;
+          
+          display:flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+      
+      .self-block p {
+          font-size: 20px;
+          text-align: center;
+      }
+      
+      .avatar-block {
+          width: 100%;
+          border-radius: 300px;
+          overflow: hidden;
+          background-color: #2E2E2E;
+      }
+      
+      .avatar-img {
+          width:100%;
+      }
+      
+      .self-block__button {
+          padding: 5px;
+          padding-top: 7px;
       }
       
       .continues-list {
@@ -119,7 +152,6 @@
           margin-top: 10px;
           padding: 6px;
           padding-bottom: 3px;
-          cursor: pointer;
       }
       
       .game-button {
