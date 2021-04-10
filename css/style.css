@@ -55,7 +55,7 @@
       .form-create {
           margin-bottom: 20px;
           flex-grow: 0;
-          padding: 20px;
+          padding: 15px;
           display: flex;
           justify-content: space-between;
           font-size: 25px;
@@ -66,6 +66,7 @@
           width: 270px;
           display: flex;
           justify-content: space-between;
+          align-items: center;
       }
       
       .form-create__input-form {
@@ -160,7 +161,7 @@
           height: 350px;
           flex-grow: 0;
           margin-bottom: 20px;
-          padding: 30px;
+          padding: 30px 15px;
           
           display:flex;
           flex-direction: column;
@@ -223,15 +224,16 @@
       }
       
       .color-game-circle {
-          width: 30px;
-          height: 30px;
+          width: 26px;
+          height: 26px;
           border-radius: 30px;
           border: solid 2px #2E2E2E;
           
       }
+      
       .lists-block__list-item_color-game-circle {
           position: absolute;
-          bottom: 9px;
+          bottom: 11px;
           left: 16px;
       }
       
@@ -246,6 +248,7 @@
       .circle-rand {
           background-image: url(../img/rand-circle-color.jpg);
           transform: rotate(45deg);
+          background-size: cover;
       }
       
       .lists-block__list-item_time-block {
@@ -271,6 +274,79 @@
       
       .continues-list__list-item_color-game-circle {
           position: absolute;
-          bottom: 7px;
+          bottom: 9px;
           right: 18px;
+      }
+
+      @media screen and (max-height: 850px) {
+          .block-left {
+              width: 600px;
+          }
+          
+          .list-general-width {
+              width: 260px;
+          }
+          
+          .block-right {
+             width: 220px;
+          }
+          
+          .color, .color-diactive, .self-block {
+              font-size: 16px;
+          }
+          
+          .list h1 {
+              font-size: 25px;
+              margin-bottom: 10px;
+          }
+          
+          .form-create {
+              font-size: 20px;
+          }
+          
+          .form-create__times {
+              width: 260px;
+          }
+          
+          .form-create__input-form {
+              height: 26px;
+          }
+          
+          .self-block {
+              height: 300px;
+              padding: 15px;
+          }
+          
+          .avatar-block {
+              max-width: 140px;
+          }
+          
+          .create-button {
+              width: 110px;
+              padding-top: 7px;
+          }
+          
+          .lists-block__list-item {
+              font-size: 16px;
+              margin-bottom: 10px;
+          }
+          
+          .lists-block__list-item_button {
+              padding: 5px;
+              padding-bottom: 2px;
+              margin-top: 8px;
+          }
+          
+          .tournament-button {
+              width: 100px;
+          }
+          
+          .color-game-circle {
+              width: 25px;
+              height: 25px;
+          }
+          
+          .lists-block__list-item_time-block {
+              bottom: 10px;
+          }
       }
