@@ -7,7 +7,7 @@
           justify-content: center;
           align-items: stretch;
       }
-      
+        
       .color, .color-diactive {
           text-align: center;
           display: block;
@@ -265,7 +265,7 @@
       }
       
       .tournament-button {
-          width: 115px;
+          width: 120px;
       }
       
       .time-button {
@@ -277,7 +277,7 @@
           bottom: 9px;
           right: 18px;
       }
-
+      
       @media screen and (max-height: 850px) {
           .block-left {
               width: 600px;
@@ -288,7 +288,7 @@
           }
           
           .block-right {
-             width: 220px;
+              width: 220px;
           }
           
           .color, .color-diactive, .self-block {
@@ -349,4 +349,113 @@
           .lists-block__list-item_time-block {
               bottom: 10px;
           }
+      }
+      
+      
+      
+      
+      .game-main-block {
+          max-height: 800px;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 0px;
+      }
+      
+      .game-block-board {
+          height: 800px;
+          width: 800px;
+          margin-right: 15px;
+      }
+      
+      .game-block-right {
+          width: 280px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+      
+      .game-history {
+          flex-grow: 1;
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+      
+      .game-history h1 {
+          text-align: center;
+          font-size: 30px;
+          text-transform: uppercase;
+      }
+      
+      .game-history__table {
+          width: 100%;
+          text-align: center;
+          border-spacing: 10px;
+          border-collapse: separate;
+      }
+      
+      .game-history__table td {
+          background-color: #2E2E2E;
+          font-size: 18px;
+          padding: 5px 10px;
+          padding-top: 7px;
+          border-radius: 3px;
+      }
+      
+      .game-history__table td:nth-child(1) {
+          width: 20%;
+      }
+      .game-history__table td:nth-child(2) {
+          width: 35%;
+      }
+      .game-history__table td:nth-child(3) {
+          width: 35%;
+      }
+      
+      .game-history-buttons {
+          flex-grow: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 15px;
+      }
+      
+      .game-history-buttons__button {
+          width: 50px;
+          height: 40px;
+          background-size: 60%;
+          background-repeat: no-repeat;
+          background-position: center center;
+      }
+            
+      #button-to-home {
+        background-image: url(../img/icon-home.png)
+      }
+      #button-cancel {
+        background-image: url(../img/icon-cancel.png)
+      }
+      #button-give-up {
+        background-image: url(../img/icon-giveup.png)
+      }
+      #button-nobody {
+        background-image: url(../img/icon-nobody.png)
+      }
+
+      .game-info {
+          margin-top: 15px;
+          height: 220px;
+          flex-grow: 0;
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 22px;
+          text-align: center;
+      }
+      
+      .game-info__time-block {
+          padding: 8px;
+          padding-top: 10px;
       }
