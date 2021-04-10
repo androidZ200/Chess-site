@@ -459,3 +459,11 @@
           padding: 8px;
           padding-top: 10px;
       }
+      
+      #Board {
+        width: 96%;
+        height: 96%;
+        position: relative;
+        top: 2%;
+        left: 2%;
+      }
