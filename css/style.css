@@ -645,3 +645,51 @@
                 font-size: 30px;
             }
         }
+        
+        .self-block-profile {
+            height: 490px;
+        }
+        
+        .profile-list {
+            flex-grow: 1;
+            padding-top: 25px;
+        }
+        
+        .game-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .game-item__name {
+            width: 190px;
+            overflow: hidden;
+        }
+        
+        .game-item__state {
+            width: 80px;
+        }
+        
+        .game-item__date {
+            width: 80px;
+        }
+        
+        .color_win {
+            color: lightgreen;
+        }
+        
+        .color_lose {
+            color: red;
+        }
+        
+        .color_nobody {
+            color: gray;
+        }
+        
+        @media screen and (max-height: 850px) {
+            .self-block-profile {
+                height: 430px;
+            }
+        }
