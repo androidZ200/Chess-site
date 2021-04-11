@@ -13,7 +13,7 @@
     <div class='main-block'>
     
         <div class='block-left back-gray'>
-            <div class='list profile-list'>
+            <div class='list list-game profile-list'>
                 <h1>игры</h1>
                     <div class="block-overflow-out">
                         <div class="block-overflow">
@@ -25,7 +25,7 @@
                                     Победа белых
                                 </div>
                                 <div class="game-item__date">
-                                    11.04.2021 15:00
+                                    1.04.2021 2:02
                                 </div>
                                 <div class="game-item__name">
                                     Имя черного соперника(рейтинг)
@@ -80,23 +80,59 @@
                     </div>    
             </div>
             
-            <div class='list profile-list deactivated'>
+            <div class='list list-tournament profile-list deactivated'>
                 <h1>турниры</h1>
                     <div class="block-overflow-out">
                         <div class="block-overflow">
                             <div class="lists-block__list-item tournament-item">
-                                
+                                <div class="tournament-item__name">
+                                    Очень длинное название турнира, ведь его могут назвать со всеми подробностями и описанием
+                                </div>
+                                <div class="tournament-item__date">
+                                    13.03.2021
+                                </div>
+                                <div class="tournament-item__players">
+                                    участников: 20
+                                </div>
+                            </div>
+                            <div class="lists-block__list-item tournament-item">
+                                <div class="tournament-item__name">
+                                    Очень длинное название турнира
+                                </div>
+                                <div class="tournament-item__date">
+                                    13.03.2021
+                                </div>
+                                <div class="tournament-item__players">
+                                    участников: 220
+                                </div>
                             </div>
                         </div>
                     </div>
             </div>
             
-            <div class='list profile-list deactivated'>
+            <div class='list list-friend profile-list deactivated'>
                 <h1>друзья</h1>
                     <div class="block-overflow-out">
                         <div class="block-overflow">
                             <div class="lists-block__list-item friend-item">
-                                
+                                <img src="img/avatar.png" alt="avatar" class="friend-item__avatar">
+                                <div class="friend-item__name">Имя друга(рейтинг)<br>логин</div>
+                                <div class="friend-item__info">Игры: 150<br>Турниры: 14</div>
+                            </div>
+                            <div class="lists-block__list-item friend-item">
+                                <img src="img/avatar.png" alt="avatar" class="friend-item__avatar">
+                                <div class="friend-item__name">Полина Мастерова(2100)<br>polymasterovaaa</div>
+                                <div class="friend-item__info">Игры: 14<br>Турниры: 1</div>
+                            </div>
+                            <div class="lists-block__list-item friend-item">
+                                <img src="img/avatar.png" alt="avatar" class="friend-item__avatar">
+                                <div class="friend-item__name">Николаев(1400)<br>Rtyswe</div>
+                                <div class="friend-item__info">Игры: 110<br>Турниры: 10</div>
+                            </div>
+                            <div class="lists-block__list-item friend-item">
+                                <img src="img/avatar.png" alt="avatar" class="friend-item__avatar">
+                                <div class="friend-item__name">Имя друга(рейтинг)<br>логин</div>
+                                <div class="friend-item__info">Игры: 150<br>Турниры: 14</div>
                             </div>
                         </div>
                     </div>
@@ -104,19 +140,23 @@
         </div>
         
         <div class='block-right'>
-            <div class='self-block self-block-profile back-gray'>
+            <div class='self-block back-gray'>
                 <div class="avatar-block">
                     <img class="avatar-img" src="img/avatar.png">
                 </div>
                 <p>Сошников Даниил(1600)</p>
-                <button class="self-block__button color">Главная</button>
-                <button class="self-block__button color">Игры</button>
-                <button class="self-block__button color">Турниры</button>
-                <button class="self-block__button color">Друзья</button>
-                <button class="self-block__button color">Выйти</button>
+                <button id="button-to-main" class="self-block__button color">Главная</button>
+                <button id="button-show-game" class="self-block__button color">Игры</button>
+                <button id="button-show-tournament" class="self-block__button color">Турниры</button>
+                <button id="button-show-friend" class="self-block__button color">Друзья</button>
+                <button id="button-logout" class="self-block__button color">Выйти</button>
             </div>
         </div>
         
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+    <script src="js/script-profile.js"></script>
 </body>
 </html>

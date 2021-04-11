@@ -22,6 +22,11 @@
           padding: 0;
       }
       
+      .back-gray {
+          background-color: #4F4F4F;
+          border-radius: 3px;
+      }
+      
       .color-deactivated {
           background-color: gray;
       }
@@ -162,14 +167,9 @@
       }
       
       .self-block {
-          height: 350px;
           flex-grow: 0;
           margin-bottom: 20px;
           padding: 30px 15px;
-          
-          display:flex;
-          flex-direction: column;
-          justify-content: space-between;
       }
       
       .self-block p {
@@ -181,6 +181,7 @@
           width: 100%;
           max-width: 180px;
           margin: 0px auto;
+          margin-bottom: 20px;
           border-radius: 300px;
           overflow: hidden;
           background-color: #2E2E2E;
@@ -191,17 +192,14 @@
       }
       
       .self-block__button {
+          margin-top: 20px;
           padding: 5px;
           padding-top: 7px;
+          width:100%;
       }
       
       .continues-list {
           flex-grow: 1;
-      }
-      
-      .back-gray {
-          background-color: #4F4F4F;
-          border-radius: 3px;
       }
       
       .lists-block__list-item {
@@ -321,12 +319,16 @@
           }
           
           .self-block {
-              height: 300px;
               padding: 15px;
           }
           
           .avatar-block {
               max-width: 140px;
+              margin-bottom: 13px;
+          }
+          
+          .self-block__button {
+              margin-top: 13px;
           }
           
           .create-button {
@@ -646,16 +648,12 @@
             }
         }
         
-        .self-block-profile {
-            height: 490px;
-        }
-        
         .profile-list {
             flex-grow: 1;
             padding-top: 25px;
         }
         
-        .game-item {
+        .game-item, .tournament-item, .friend-item {
             display: flex;
             justify-content: space-between;
             font-size: 16px;
@@ -688,8 +686,40 @@
             color: gray;
         }
         
+        .tournament-item__name {
+            text-align: left;
+            width: 55%
+        }
+        
+        .tournament-item__date {
+            width: 15%;
+        }
+        
+        .tournament-item__players {
+            width: 25%;
+        }
+        
+        .friend-item__avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: #4F4F4F;
+        }
+        
+        .friend-item__name {
+            padding-right: 200px;
+        }
+        
+        .friend-item__info {
+            width: 120px;
+            text-align: left;
+        }
+        
         @media screen and (max-height: 850px) {
-            .self-block-profile {
-                height: 430px;
+            .game-item, .tournament-item, .friend-item {
+                font-size: 14px;
+            }
+            .friend-item__name {
+                padding-right: 160px;
             }
         }
