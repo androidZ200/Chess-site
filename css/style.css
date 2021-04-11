@@ -33,6 +33,7 @@
       h1 {
           font-size: 30px;
           text-transform: uppercase;
+          text-align: center;
       }
       
       .list h1 {
@@ -291,10 +292,10 @@
           }
           
           .block-right {
-              width: 220px;
+              width: 260px;
           }
           
-          .color, .color-diactive, .self-block {
+          .color, .color-deactivated, .self-block {
               font-size: 16px;
           }
           
@@ -390,10 +391,6 @@
           justify-content: space-between;
       }
       
-      .game-history h1 {
-          text-align: center;
-      }
-      
       .game-history__table {
           width: 100%;
           text-align: center;
@@ -472,6 +469,47 @@
         top: 2%;
         left: 2%;
       }
+      
+      @media screen and (max-height: 850px) {
+            .game-main-block {
+                max-height: 600px;
+            }
+      
+            .game-block-board {
+                height: 600px;
+                width:600px;
+            }
+            
+            .game-block-right {
+                width: 280px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            .game-history__table {
+                width: 100%;
+                text-align: center;
+                border-spacing: 10px;
+                border-collapse: separate;
+            }
+            
+            .game-history__table td {
+                font-size: 16px;
+                padding: 5px;
+            }
+            
+            .game-history-buttons__button {
+                width: 50px;
+                height: 35px;
+                background-size: 50%;
+            }
+            
+            .game-info {
+                height: 180px;
+                font-size: 20px;
+            }
+      }
     
       .deactivated {
           display: none;
@@ -487,10 +525,6 @@
         width: 600px;
         margin-left: 15px;
         padding: 30px;
-      }
-      
-      .block-rules h1 {
-          text-align: center;
       }
       
       .block-rules p {
@@ -530,6 +564,7 @@
             height: 15px;
             background-color:#2E2E2E;
             margin-right: 10px;
+            cursor: pointer;
         }
         
         #accept-button:checked + label:before {
@@ -551,4 +586,18 @@
 
         .orange-star{
             color: orange;
+        }
+        
+        @media screen and (max-height: 850px) {
+            .input-field {
+                margin-bottom: 15px;
+            }
+            
+            .button-block {
+                margin-top: 15px;
+            }
+            
+            .form-block h1, .input-field, {
+                font-size: 18px;
+            }
         }
