@@ -140,7 +140,6 @@
       
       .block-overflow-out {
           position: relative;
-          height: 100%;
           width: 100%;
           flex-grow: 1;
       }
@@ -721,5 +720,118 @@
             }
             .friend-item__name {
                 padding-right: 160px;
+            }
+        }
+        
+        .tournament-block-left {
+            width: 700px;
+            margin-right: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .tournament-block-left__current-game {
+            margin-bottom: 15px;
+        }
+        
+        .tournament-block-left__players,
+        .tournament-block-left__current-game {
+            flex-grow: 1;
+        }
+        
+        .tournament-block-left__players h1,
+        .tournament-block-left__current-game h1 {
+            margin-bottom: 20px;
+        }
+        
+        .current-game-item,
+        .tournament-players-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .current-game-item {
+            cursor: pointer;
+            outline: 1px solid #2E2E2E;
+            outline-offset: -3px;
+            transition: 0.1s;
+        }
+        
+        .current-game-item__name {
+            width: 200px;
+        }
+        
+        .current-game-item__time {
+            width: 70px;
+            padding: 5px;
+        }
+        
+        .selected-current-game {
+            outline: 1px solid orange;
+        }
+        
+        .tournament-block-right {
+            width: 400px;
+        }
+        
+        .tournament-players-item p:nth-child(1) {
+            width: 280px;
+            text-align: left;
+        }
+        
+        .tournament-players-item p:nth-child(2) {
+            width: 80px;
+        }
+        
+        .tournament-players-item p:nth-child(3) {
+            width: 150px;
+        }
+        
+        .tournament-block-right__begin-game {
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .tournament-block-right__begin-game p {
+            margin-bottom: 10px;
+        }
+        
+        .tournament-block-right__button {
+            width: 100%;
+            padding: 7px;
+        }
+        
+        .tournament-block-right__block-board {
+            height: 370px;
+            width: 370px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        #review-board {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .tournament-block-right__info {
+            padding: 15px;
+            font-size: 20px;
+        }
+        
+        .tournament-block-right__info p:first-child {
+            margin-bottom: 10px;
+        }
+        
+        @media screen and (max-height: 850px) {
+            .tournament-block-right {
+                width: 330px;
+            }
+            .tournament-block-right__block-board {
+                height: 300px;
+                width: 300px;
             }
         }

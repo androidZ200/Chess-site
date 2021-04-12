@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURNAMENT</title>
+    <link rel="stylesheet" href="css/resert.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+      href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+      integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
+      crossorigin="anonymous">
+</head>
+
+<body>
+    <div class='main-block'>
+        <div class="tournament-block-left">
+            <div class="list tournament-block-left__current-game back-gray">
+                <h1>текущие игры</h1>
+                <div class="block-overflow-out">
+                    <div class="block-overflow">
+                        <div class="lists-block__list-item current-game-item">
+                            <div class="current-game-item__name">
+                                Имя белого соперника(ретинг)
+                            </div>
+                            <div class="current-game-item__time color">11:10</div>
+                            <div class="current-game-item__time color-deactivated">5:56</div>
+                            <div class="current-game-item__name">
+                                Имя черного соперника(ретинг)
+                            </div>
+                        </div>
+                        <div class="lists-block__list-item current-game-item selected-current-game">
+                            <div class="current-game-item__name">
+                                Имя белого соперника(ретинг)
+                            </div>
+                            <div class="current-game-item__time color">11:10</div>
+                            <div class="current-game-item__time color-deactivated">5:56</div>
+                            <div class="current-game-item__name">
+                                Имя черного соперника(ретинг)
+                            </div>
+                        </div>
+                        <div class="lists-block__list-item current-game-item">
+                            <div class="current-game-item__name">
+                                Имя белого соперника(ретинг)
+                            </div>
+                            <div class="current-game-item__time color-deactivated">11:10</div>
+                            <div class="current-game-item__time color">5:56</div>
+                            <div class="current-game-item__name">
+                                Имя черного соперника(ретинг)
+                            </div>
+                        </div>
+                        <div class="lists-block__list-item current-game-item">
+                            <div class="current-game-item__name">
+                                Имя белого соперника(ретинг)
+                            </div>
+                            <div class="current-game-item__time color">11:10</div>
+                            <div class="current-game-item__time color-deactivated">5:56</div>
+                            <div class="current-game-item__name">
+                                Имя черного соперника(ретинг)
+                            </div>
+                        </div>
+                        <div class="lists-block__list-item current-game-item">
+                            <div class="current-game-item__name">
+                                Имя белого соперника(ретинг)
+                            </div>
+                            <div class="current-game-item__time color-deactivated">11:10</div>
+                            <div class="current-game-item__time color">5:56</div>
+                            <div class="current-game-item__name">
+                                Имя черного соперника(ретинг)
+                            </div>
+                        </div>
+                        <div class="lists-block__list-item current-game-item">
+                            <div class="current-game-item__name">
+                                Имя белого соперника(ретинг)
+                            </div>
+                            <div class="current-game-item__time color-deactivated">11:10</div>
+                            <div class="current-game-item__time color">5:56</div>
+                            <div class="current-game-item__name">
+                                Имя черного соперника(ретинг)
+                            </div>
+                        </div>
+                        <div class="lists-block__list-item current-game-item">
+                            <div class="current-game-item__name">
+                                Имя белого соперника(ретинг)
+                            </div>
+                            <div class="current-game-item__time color-deactivated">11:10</div>
+                            <div class="current-game-item__time color">5:56</div>
+                            <div class="current-game-item__name">
+                                Имя черного соперника(ретинг)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list tournament-block-left__players back-gray">
+                <h1>участники</h1>
+                <div class="block-overflow-out">
+                    <div class="block-overflow">
+                        <div class="lists-block__list-item tournament-players-item">
+                            <p>Имя участника(рейтинг)</p>
+                            <p>Играет</p>
+                            <p>Сыграно игр: 3</p>
+                        </div>
+                        <div class="lists-block__list-item tournament-players-item">
+                            <p>Имя участника(рейтинг)</p>
+                            <p>Ожидает</p>
+                            <p>Сыграно игр: 13</p>
+                        </div>
+                        <div class="lists-block__list-item tournament-players-item">
+                            <p>Имя участника(рейтинг)</p>
+                            <p>Играет</p>
+                            <p>Сыграно игр: 6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tournament-block-right">
+            <div class="tournament-block-right__begin-game back-gray">
+                <p>Ваш соперник:</p>
+                <p>Имя соперника(рейтинг)</p>
+                <button class="tournament-block-right__button color">Начать</button>
+            </div>
+            <div class="tournament-block-right__block-board back-gray">
+                <div id="review-board"></div>
+            </div>
+            <div class="tournament-block-right__info back-gray">
+                <p>Сыгранно игр: 5</p>
+                <p>Текущий рейтинг: 1789</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+        crossorigin="anonymous"></script>
+    <script src="js/script-tournament.js"></script>
+    </body>
+</html>
