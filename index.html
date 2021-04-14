@@ -10,9 +10,64 @@
 </head>
 
 <body>
+    <div class="create-tournament-block deactivated">
+        <div class='main-block'>
+            <form class="block-info-tournament back-gray">
+                <div>
+                    <div class="block-info-tournament__name">
+                        <h1 for="name-tournament">Название турнира:</h1>
+                        <textarea id="name-tournament"></textarea>
+                    </div>
+                    
+                    <div class="block-info-tournament__type">
+                        <h1>Тип доступа:</h1>
+                        <div class="block-info-tournament__type_radio-buttons">
+                            <input type="radio" id="radio-public" name="radio-type" checked>
+                            <label class="" for="radio-public">Публичный</label>
+                            <input type="radio" id="radio-watch" name="radio-type">
+                            <label class="" for="radio-watch">Только для просмотра</label>
+                            <input type="radio" id="radio-private" name="radio-type">
+                            <label class="" for="radio-private">Приватный</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block-info-tournament__buttons">
+                    <button class="block-info-tournament__button color">СТАРТ</button>
+                    <button class="block-info-tournament__button color">ПРИГЛАСИТЬ</button>
+                    <button id="block-info-tournament__button-cancel" class="block-info-tournament__button color">ОТМЕНА</button>
+                </div>
+            </form>
+            <div class="list block-invates back-gray">
+                <h1>Усастники</h1>
+                <div class="block-overflow-out">
+                    <div class="block-overflow">
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                        <p>Имя участника(рейтинг)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class='main-block'>
         <div class='block-left'>
             <form class='form-create back-gray'>
+                <div class="form-create-wait-for back-gray deactivated">
+                    <p>Ожидайте соединения</p>
+                    <button class="form-create-wait-for_button color">Отмена</button>
+                </div>
                 <div class="form-create__times">
                     <p>Время:</p>
                     <input type="number" max="180" min="0" id="time-lim" class="form-create__input-form" value="0">
@@ -75,6 +130,13 @@
                     <h1>Турниры</h1>
                     <div class="block-overflow-out">
                         <div class="block-overflow">
+                            <div class="lists-block__list-item create-tournament-item">
+                                <button class="lists-block__list-item_button color create-tournament-button">
+                                    Создать турнир
+                                </button>
+                            </div>
+                            
+                            
                             <div class="lists-block__list-item">
                                 <p>Название турнира</p>
                                 <div class="lists-block__buttons">
@@ -123,6 +185,7 @@
                 </div>
                 <p>Сошников Даниил(1600)</p>
                 <button class="self-block__button color">Мой профиль</button>
+                <button class="self-block__button color">пригласить друга</button>
                 <button class="self-block__button color">Выйти</button>
             </div>
             <div class='continues-list back-gray list'>
@@ -178,5 +241,12 @@
 
         </div>
     </div>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -62,6 +62,7 @@
       }
       
       .form-create {
+          position: relative;
           margin-bottom: 20px;
           flex-grow: 0;
           padding: 15px;
@@ -118,6 +119,23 @@
       .create-button {
           width: 140px;
           padding-top: 8px;
+      }
+      
+      .form-create-wait-for {
+          z-index: 3;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          left: 0px;
+          top: 0px;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      .form-create-wait-for_button {
+          padding: 8px 17px 6px 17px;
+          margin-left: 20px;
       }
       
       .lists-block {
@@ -279,6 +297,113 @@
           right: 18px;
       }
       
+      .create-tournament-item {
+          display: flex;
+      }
+      
+      .create-tournament-button {
+          margin: 0px;
+          flex-grow: 1;
+      }
+      
+      .create-tournament-block {
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.6);
+          backdrop-filter: blur(5px);
+          z-index: 10;
+      }
+      
+      .create-tournament-block .main-block {
+          height: 400px;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+      }
+      
+      .block-invates {
+          width: 250px;
+          padding: 15px;
+      }
+      
+      .block-invates p {
+          position:relative;
+          left: 0px;
+          margin-bottom: 7px;
+          text-align: left;
+          transition: 0.4s;
+          cursor: pointer;
+          font-size:18px;
+      }
+      
+      .block-invates p:hover {
+          left: -50px;
+      }
+      
+      .block-info-tournament {
+          width: 600px;
+          padding: 15px;
+          margin-right: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+      }
+      
+      .block-info-tournament h1 {
+          margin-bottom: 15px;
+      }
+      
+      .block-info-tournament__name {
+          display: flex;
+          flex-direction: column;
+      }
+      
+      #name-tournament {
+        resize: none;
+        background-color: #2E2E2E;
+        border: 0;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+      }
+      
+      .block-info-tournament__type {
+          margin-top: 40px;
+      }
+      
+      .block-info-tournament__type_radio-buttons {
+          display: flex;
+          justify-content: space-between;
+          font-size: 22px;
+          color: white;
+          padding: 0px 20px;
+      }
+      
+      .block-info-tournament__type_radio-buttons label {
+          transition: 0.1s;
+          cursor: pointer;
+      }
+      
+      .block-info-tournament__type_radio-buttons input[type=radio] {
+          display: none;
+      }
+      
+      .block-info-tournament__type_radio-buttons input[type=radio]:checked + label {
+          color: orange;
+      }
+      
+      .block-info-tournament__buttons {
+          display: flex;
+          justify-content: space-between;
+      }
+      
+      .block-info-tournament__button {
+          width: 29%;
+          padding: 10px 5px;
+          padding-top: 12px;
+      }
+      
       @media screen and (max-height: 850px) {
           .block-left {
               width: 600px;
@@ -322,7 +447,7 @@
           }
           
           .avatar-block {
-              max-width: 140px;
+              max-width: 120px;
               margin-bottom: 13px;
           }
           
@@ -531,6 +656,7 @@
       .block-rules p {
           margin-top: 10px;
           font-size: 20px;
+          text-align: left;
       }
 
         .input-field {
@@ -787,6 +913,16 @@
         
         .tournament-players-item p:nth-child(3) {
             width: 150px;
+        }
+        
+        .tournament-block-right__tournament-info {
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .tournament-block-right__tournament-info h1 {
+            font-size: 25px;
+            margin-bottom: 10px;
         }
         
         .tournament-block-right__begin-game {
