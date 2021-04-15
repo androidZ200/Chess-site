@@ -184,6 +184,7 @@
       }
       
       .self-block {
+          position: relative;
           flex-grow: 0;
           margin-bottom: 20px;
           padding: 30px 15px;
@@ -215,6 +216,41 @@
           width:100%;
       }
       
+      .bell-block {
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          border-radius: 50px;
+          background-color: gray;
+          cursor: pointer;
+          
+          right: 20%;
+          top: 30px;
+      }
+      
+      .bell-active {
+          background-color: orange;
+          box-shadow: white 0px 0px 8px 0px;
+      }
+      
+      .bell-img {
+          width: 80%;
+          margin: 3px 10%;
+      }
+      
+      .list-invates {
+          position: absolute;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          left: 0px;
+          top: 0px;
+      }
+      
+      .invate-item p:first-child {
+          margin-bottom: 4px;
+      }
+      
       .continues-list {
           flex-grow: 1;
       }
@@ -231,8 +267,11 @@
           overflow-x: hidden;
       }
       
+      .lists-block__list-item p {
+          margin-bottom: 10px;
+      }
+      
       .lists-block__list-item_button {
-          margin-top: 10px;
           padding: 6px;
           padding-bottom: 3px;
       }
@@ -289,6 +328,14 @@
       
       .time-button {
           width: 70%;
+      }
+      
+      .YN-buttons {
+          justify-content: space-around;
+      }
+      
+      .YN-button {
+          width: 80px;
       }
       
       .continues-list__list-item_color-game-circle {
@@ -444,6 +491,14 @@
           
           .self-block {
               padding: 15px;
+          }
+          
+          .bell-block {
+              width: 30px;
+              height: 30px;
+              
+              top: 15px;
+              right: 23%;
           }
           
           .avatar-block {

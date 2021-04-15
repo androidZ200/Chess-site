@@ -20,6 +20,20 @@ $(document).ready(function(){
         $(".form-create-wait-for").addClass("deactivated");
     });
     
+    $(".bell-active").click(function(e){
+        $(".list-invates").removeClass("deactivated");
+        e.stopPropagation();
+    });
+    jQuery(document).on('click',function (e) {
+        var el = '.list-invates';
+        if (jQuery(e.target).closest(el).length) return;
+        $(".list-invates").addClass("deactivated");
+    });
+    
+    
+    
+    
+    
     
     
     $("#sign-in-form__sign-up-button").click(function(){
@@ -31,6 +45,9 @@ $(document).ready(function(){
         $(".sign-in-form").removeClass("deactivated");
         $(".sign-up-form").addClass("deactivated");
     });
+    
+    
+    
     
     
     
