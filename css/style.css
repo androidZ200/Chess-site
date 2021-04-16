@@ -1047,3 +1047,79 @@
                 width: 300px;
             }
         }
+        
+        
+        
+        
+        
+        .main-block_tournament-finished {
+            flex-direction: column;
+            width: 900px;
+        }
+        
+        .tournament-finished_info {
+            margin-bottom: 20px;
+            padding: 15px;
+            flex-grow: 0;
+        }
+        
+        .tournament-finished_info p {
+            margin-top: 5px;
+        }
+        
+        .tournament-finished_info h1 {
+            font-size: 25px;
+        }
+        
+        .tournament-finished_lists {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+        
+        .tournament-finished-games,
+        .tournament-finished-players {
+            flex-grow: 1;
+        }
+        
+        .tournament-finished-players {
+            margin-left: 20px;
+        }
+        
+        .tournament-finished_lists__item,
+        .tournament-finished-players__item {
+            background-color: #2E2E2E;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 3px;
+        }
+        
+        .tournament-finished_lists__item p:nth-child(2) {
+            margin: 5px;
+            color: orange;
+        }
+        
+        .tournament-finished-players__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .tournament-finished-players__item_avatr-block {
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            overflow: hidden;
+            background-color: #4F4F4F;
+            flex-grow: 0;
+            margin-right: 20px;
+        }
+        
+        .tournament-finished-players__item_text {
+            flex-grow: 1;
+        }
+        
+        .tournament-finished-players__item_text p:first-child {
+            margin-bottom: 5px;
+        }
