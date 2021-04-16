@@ -56,18 +56,26 @@ $(document).ready(function(){
         $(".list-tournament").addClass("deactivated");
         $(".list-friend").addClass("deactivated");
     });
-    
     $("#button-show-tournament").click(function(){
         $(".list-game").addClass("deactivated");
         $(".list-tournament").removeClass("deactivated");
         $(".list-friend").addClass("deactivated");
     });
-    
     $("#button-show-friend").click(function(){
         $(".list-game").addClass("deactivated");
         $(".list-tournament").addClass("deactivated");
         $(".list-friend").removeClass("deactivated");
     });
+    
+    $(".list-friend__find-friends-block").click(function(){
+        $(".find-friends-block").removeClass("deactivated");
+    });
+    $("#find-friends_button-cancel").click(function(e){
+        $(".find-friends-block").addClass("deactivated");
+        e.preventDefault();
+    });
+    
+    
     
     
     

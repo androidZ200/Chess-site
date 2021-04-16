@@ -353,7 +353,7 @@
           flex-grow: 1;
       }
       
-      .create-tournament-block {
+      .block-blur {
           position: absolute;
           width: 100%;
           height: 100vh;
@@ -849,6 +849,83 @@
             }
         }
         
+        .main-block-find-friends {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            width: 900px;
+            height: 600px;
+            margin: 0 auto;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .find-friend-form {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 0;
+        }
+        
+        .find-friend-form h1 {
+            font-size: 22px;
+            margin-right: 10px;
+        }
+        
+        .input-field-find-friends {
+            font-size: 22px;
+            background-color: #2E2E2E;
+            color: orange;
+            border: 0;
+            padding: 5px;
+            flex-grow: 1;
+        }
+        
+        .find-friends_result-block {
+            flex-grow: 1;
+            margin-top: 20px;
+        }
+        
+        .find-friends_button {
+            font-size: 22px;
+            padding: 5px;
+            width: 120px;
+            margin-left: 10px;
+        }
+        
+        .find-friends_item {
+            background-color: #2E2E2E;
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .find-friends_item__avatar-block {
+            width: 35px;
+            height: 35px;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: #4F4F4F;
+            margin-right: 10px;
+        }
+        
+        .find-friends_item__avatar-img {
+            width: 100%;
+        }
+        
+        .find-friends_item__add-button {
+            padding: 5px;
+            padding-top: 7px;
+            width: 160px;
+            margin-left: 10px;
+        }
+        
         .profile-list {
             flex-grow: 1;
             padding-top: 25px;
@@ -898,6 +975,34 @@
         
         .tournament-item__players {
             width: 25%;
+        }
+        
+        .list-friend {
+            position: relative;
+        }
+        
+        .list-friend__find-friends-block {
+            position: absolute;
+            width: 50px;
+            heigth: 50px;
+            border-radius: 60px;
+            background-color: gray;
+            overflow: hidden;
+            cursor: pointer;
+            
+            top: 15px;
+            right: 30px;
+            transition: 0.2s;
+        }
+        
+        .list-friend__find-friends-block:hover {
+            background-color: white;
+        }
+        
+        .list-friend__find-friends-imd {
+            width: 70%;
+            height: 70%;
+            padding: 15%;
         }
         
         .friend-item__avatar {

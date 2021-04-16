@@ -10,8 +10,58 @@
 </head>
 
 <body>
+    <div class="find-friends-block block-blur deactivated">
+        <div class='main-block-find-friends'>
+            <form class="find-friend-form back-gray">
+                <h1>Найти:</h1>
+                <input class="input-field-find-friends" type="text">
+                <button class="find-friends_button color">Найти</button>
+                <button id="find-friends_button-cancel" class="find-friends_button color">Отмена</button>
+            </form>
+            <div class="find-friends_result-block list back-gray">
+                <div class="block-overflow-out">
+                    <div class="block-overflow">
+                        <div class="find-friends_item">
+                            <div class="find-friends_item__avatar-block">
+                                <img class="find-friends_item__avatar-img" src="img/avatar.png">
+                            </div>
+                            <p>Имя игрока(рейтинг)</p>
+                            <button class="find-friends_item__add-button color">Добавить</button>
+                        </div>
+                        <div class="find-friends_item">
+                            <div class="find-friends_item__avatar-block">
+                                <img class="find-friends_item__avatar-img" src="img/avatar.png">
+                            </div>
+                            <p>Имя игрока(рейтинг)</p>
+                            <button class="find-friends_item__add-button color">Добавить</button>
+                        </div>
+                        <div class="find-friends_item">
+                            <div class="find-friends_item__avatar-block">
+                                <img class="find-friends_item__avatar-img" src="img/avatar.png">
+                            </div>
+                            <p>Имя игрока(рейтинг)</p>
+                            <button class="find-friends_item__add-button color">Добавить</button>
+                        </div>
+                        <div class="find-friends_item">
+                            <div class="find-friends_item__avatar-block">
+                                <img class="find-friends_item__avatar-img" src="img/avatar.png">
+                            </div>
+                            <p>Имя игрока(рейтинг)</p>
+                            <button class="find-friends_item__add-button color">Добавить</button>
+                        </div>
+                        <div class="find-friends_item">
+                            <div class="find-friends_item__avatar-block">
+                                <img class="find-friends_item__avatar-img" src="img/avatar.png">
+                            </div>
+                            <p>Имя игрока(рейтинг)</p>
+                            <button class="find-friends_item__add-button color">Добавить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class='main-block'>
-    
         <div class='block-left back-gray'>
             <div class='list list-game profile-list'>
                 <h1>игры</h1>
@@ -111,6 +161,9 @@
             </div>
             
             <div class='list list-friend profile-list deactivated'>
+                <div class="list-friend__find-friends-block">
+                    <img class="list-friend__find-friends-imd" src="img/find-friends.png">
+                </div>
                 <h1>друзья</h1>
                     <div class="block-overflow-out">
                         <div class="block-overflow">
@@ -146,6 +199,8 @@
                 </div>
                 <p>Сошников Даниил(1600)</p>
                 <button id="button-to-main" class="self-block__button color">Главная</button>
+                <button id="button-add-friend" class="self-block__button color deactivated">Добавить</button>
+                <button id="button-delete-friend" class="self-block__button color deactivated">Удалить</button>
                 <button id="button-show-game" class="self-block__button color">Игры</button>
                 <button id="button-show-tournament" class="self-block__button color">Турниры</button>
                 <button id="button-show-friend" class="self-block__button color">Друзья</button>
