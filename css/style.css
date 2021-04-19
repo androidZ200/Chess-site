@@ -1228,3 +1228,12 @@
         .tournament-finished-players__item_text p:first-child {
             margin-bottom: 5px;
         }
+
+        .block-overflow ul {
+            list-style-type: circle;
+            text-align: left;
+            font-size: 20px;
+            padding-left: 30px;
+            margin-top: 1em;
+            margin-bottom: 1em;
+         }
