@@ -33,9 +33,9 @@
                 </div>
                 
                 <div class="block-info-tournament__buttons">
-                    <button class="block-info-tournament__button color">СТАРТ</button>
-                    <button class="block-info-tournament__button color">ПРИГЛАСИТЬ</button>
-                    <button id="block-info-tournament__button-cancel" class="block-info-tournament__button color">ОТМЕНА</button>
+                    <a class="block-info-tournament__button button-active">СТАРТ</a>
+                    <a class="block-info-tournament__button button-active">ПРИГЛАСИТЬ</a>
+                    <a id="block-info-tournament__button-cancel" class="block-info-tournament__button button-active">ОТМЕНА</a>
                 </div>
             </form>
             <div class="list block-invates back-gray">
@@ -64,7 +64,7 @@
             <form class='form-create back-gray'>
                 <div class="form-create-wait-for back-gray deactivated">
                     <p>Ожидайте соединения</p>
-                    <button class="form-create-wait-for_button color">Отмена</button>
+                    <a class="form-create-wait-for_button button-active">Отмена</a>
                 </div>
                 <div class="form-create__times">
                     <p>Время:</p>
@@ -86,88 +86,91 @@
                         <label class="color-game-circle circle-white form-create__circle" for="radio-w"></label>
                     </div>
                 </div>
-                <div class="create-button color">
+                <div class="create-button button-active">
                     Создать
                 </div>
             </form>
             <div class='lists-block'>
-                <div class='list back-gray list-general-width'>
+                <div class='list back-gray list-block-games'>
                     <h1>Игры</h1>
                     <div class="block-overflow-out">
                         <div class="block-overflow">
-                            <div class="lists-block__list-item">
+                            <div class="item game-list-item">
                                 <p>Daniil Soshnikov(1500)</p>
-                                <button class="lists-block__list-item_button color game-button">
-                                    Играть
-                                </button>
+                                <div class="lists-block__buttons">
+                                    <a class="lists-block__list-item_button button-active game-button" href="game.html">
+                                        Играть
+                                    </a>
+                                </div>
                                 <div class="color-game-circle lists-block__list-item_color-game-circle circle-rand"></div>
                                 <div class="lists-block__list-item_time-block">90+0</div>
                             </div>
 
-                            <div class="lists-block__list-item">
+                            <div class="item game-list-item">
                                 <p>Полиночка(2700)</p>
-                                <button class="lists-block__list-item_button color game-button">
-                                    Играть
-                                </button>
+                                <div class="lists-block__buttons">
+                                    <a class="lists-block__list-item_button button-active game-button" href="game.html">
+                                        Играть
+                                    </a>
+                                </div>
                                 <div class="color-game-circle lists-block__list-item_color-game-circle circle-black"></div>
                                 <div class="lists-block__list-item_time-block"></div>
                             </div>
                             
-                            <div class="lists-block__list-item">
+                            <div class="item game-list-item">
                                 <p>qarasiq(1489)</p>
-                                <button class="lists-block__list-item_button color game-button">
-                                    Играть
-                                </button>
+                                <div class="lists-block__buttons">
+                                    <a class="lists-block__list-item_button button-active game-button" href="game.html">
+                                        Играть
+                                    </a>
+                                </div>
                                 <div class="color-game-circle lists-block__list-item_color-game-circle circle-white"></div>
                                 <div class="lists-block__list-item_time-block">3+3</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class='list back-gray list-general-width'>
+                <div class='list back-gray list-block-tournaments'>
                     <h1>Турниры</h1>
                     <div class="block-overflow-out">
                         <div class="block-overflow">
-                            <div class="lists-block__list-item create-tournament-item">
-                                <button class="lists-block__list-item_button color create-tournament-button">
+                            <div class="item create-tournament-item">
+                                <a class="lists-block__list-item_button button-active create-tournament-button">
                                     Создать турнир
-                                </button>
+                                </a>
                             </div>
                             
-                            
-                            <div class="lists-block__list-item">
+                            <div class="item tournament-list-item">
                                 <p>Название турнира</p>
                                 <div class="lists-block__buttons">
-                                   <button class="lists-block__list-item_button color tournament-button">
+                                   <a class="lists-block__list-item_button button-active tournament-button" href="tournament.html">
                                         Играть
-                                    </button>
-                                    <button class="lists-block__list-item_button color tournament-button">
+                                    </a>
+                                    <a class="lists-block__list-item_button button-active tournament-button" href="tournament.html">
                                         Смотреть
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
-                            
-                            <div class="lists-block__list-item">
+                            <div class="item tournament-list-item">
                                 <p>Название турнира</p>
                                 <div class="lists-block__buttons">
-                                    <button class="lists-block__list-item_button color tournament-button">
+                                    <a class="lists-block__list-item_button button-active tournament-button" href="tournament.html">
                                         Играть
-                                    </button>
-                                    <button class="lists-block__list-item_button color tournament-button">
+                                    </a>
+                                    <a class="lists-block__list-item_button button-active tournament-button" href="tournament.html">
                                         Смотреть
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
-                            
-                            <div class="lists-block__list-item">
+                            <div class="item tournament-list-item">
                                 <p>Название турнира может быть достаточно большим, поэтому это тоже нужно проверить</p>
                                 <div class="lists-block__buttons">
-                                    <button class="lists-block__list-item_button color tournament-button">
+                                    <a class="lists-block__list-item_button button-deactive tournament-button">
                                         Играть
-                                    </button>
-                                    <button class="lists-block__list-item_button color tournament-button">
+                                    </a>
+                                    <a class="lists-block__list-item_button button-active tournament-button" href="tournament.html">
                                         Смотреть
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -184,50 +187,50 @@
                 <div class="avatar-block">
                     <img class="avatar-img" src="img/avatar.png">
                 </div>
-                <p>Сошников Даниил(1600)</p>
-                <button class="self-block__button color">Мой профиль</button>
-                <button class="self-block__button color">пригласить друга</button>
-                <button class="self-block__button color">Выйти</button>
+                <p class="self-block__my-name">Сошников Даниил(1600)</p>
+                <a class="self-block__button button-active" href="profile.html">Мой профиль</a>
+                <a class="self-block__button button-active">пригласить друга</a>
+                <a class="self-block__button button-active" href="autorization.html">Выйти</a>
                 
                 <div class="list list-invates back-gray deactivated">
                     <h1>приглашения</h1>
                     <div class="block-overflow-out">
                         <div class="block-overflow">
                         
-                            <div class="lists-block__list-item invate-item">
+                            <div class="item invate-list-item invate-item">
                                 <p>Дабавить в друзья:</p>
                                 <p>Имя игрока(рейтинг)</p>
                                 <div class="lists-block__buttons YN-buttons">
-                                    <button class="lists-block__list-item_button color YN-button">
+                                    <a class="lists-block__list-item_button button-active YN-button">
                                         Да
-                                    </button>
-                                    <button class="lists-block__list-item_button color YN-button">
+                                    </a>
+                                    <a class="lists-block__list-item_button button-active YN-button">
                                         Нет
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="lists-block__list-item invate-item">
+                            <div class="item invate-list-item invate-item">
                                 <p>Игра:</p>
                                 <p>Имя игрока(рейтинг)</p>
                                 <div class="lists-block__buttons YN-buttons">
-                                    <button class="lists-block__list-item_button color YN-button">
+                                    <a class="lists-block__list-item_button button-active YN-button">
                                         Да
-                                    </button>
-                                    <button class="lists-block__list-item_button color YN-button">
+                                    </a>
+                                    <a class="lists-block__list-item_button button-active YN-button">
                                         Нет
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="lists-block__list-item invate-item">
+                            <div class="item invate-list-item invate-item">
                                 <p>Турнир:</p>
                                 <p>Название турнира, может быть достаточно большим</p>
                                 <div class="lists-block__buttons YN-buttons">
-                                    <button class="lists-block__list-item_button color YN-button">
+                                    <a class="lists-block__list-item_button button-active YN-button">
                                         Да
-                                    </button>
-                                    <button class="lists-block__list-item_button color YN-button">
+                                    </a>
+                                    <a class="lists-block__list-item_button button-active YN-button">
                                         Нет
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                             
@@ -239,48 +242,37 @@
                 <h1>текущие игры</h1>
                 <div class="block-overflow-out">
                         <div class="block-overflow">
-                            <div class="lists-block__list-item">
+                            <a class="item continue-list-item" href="game.html">
                                 <p>Имя соперника(ретинг)</p>
-                                <button class="lists-block__list-item_button color time-button">
+                                <div class="lists-block__list-item_button no-button-active time-button">
                                     14:31
-                                </button>
+                                </div>
                                 <div class="color-game-circle continues-list__list-item_color-game-circle circle-white"></div>
-                            </div>
-                            <div class="lists-block__list-item">
+                            </a>
+                            <a class="item continue-list-item" href="game.html">
                                 <p>Имя соперника(ретинг)</p>
-                                <button class="lists-block__list-item_button color-deactivated time-button">
-                                    infinity
-                                </button>
-                                <div class="color-game-circle continues-list__list-item_color-game-circle circle-black"></div>
-                            </div>
-                            <div class="lists-block__list-item">
+                                <div class="lists-block__list-item_button button-deactive time-button">
+                                    11:31
+                                </div>
+                                <div class="color-game-circle continues-list__list-item_color-game-circle circle-white"></div>
+                            </a>
+                            <a class="item continue-list-item" href="game.html">
                                 <p>Имя соперника(ретинг)</p>
-                                <button class="lists-block__list-item_button color-deactivated time-button">
+                                <div class="lists-block__list-item_button button-deactive time-button">
                                     infinity
-                                </button>
+                                </div>
                                 <div class="color-game-circle continues-list__list-item_color-game-circle circle-black"></div>
-                            </div>
-                            <div class="lists-block__list-item">
+                            </a>
+                            <a class="item continue-list-item" href="game.html">
                                 <p>Имя соперника(ретинг)</p>
-                                <button class="lists-block__list-item_button color-deactivated time-button">
+                                <div class="lists-block__list-item_button button-deactive time-button">
                                     infinity
-                                </button>
+                                </div>
                                 <div class="color-game-circle continues-list__list-item_color-game-circle circle-black"></div>
-                            </div>
-                            <div class="lists-block__list-item">
-                                <p>Имя соперника(ретинг)</p>
-                                <button class="lists-block__list-item_button color-deactivated time-button">
-                                    infinity
-                                </button>
-                                <div class="color-game-circle continues-list__list-item_color-game-circle circle-black"></div>
-                            </div>
-                            <div class="lists-block__list-item">
-                                <p>Имя соперника(ретинг)</p>
-                                <button class="lists-block__list-item_button color-deactivated time-button">
-                                    infinity
-                                </button>
-                                <div class="color-game-circle continues-list__list-item_color-game-circle circle-black"></div>
-                            </div>
+                            </a>
+                            <a class="item continue-list-item" href="tournament.html">
+                                <p>название турнира, который щас играется</p>
+                            </a>
                         </div>
                     </div>
                 
